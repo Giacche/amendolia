@@ -1,0 +1,77 @@
+#servicios{
+    margin-top: 95px;
+    .banner{
+        background: url(../../img/slider-servicios.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        p{
+            color: $white;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 100px;
+        }
+    }
+    .description{
+        padding: 50px 0;
+        p{
+            margin-bottom: 1.6em;
+            text-align: justify;
+            color: $gray-text;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.8em;
+            margin: 0;
+        }
+    }
+    .compromise{
+        padding-bottom: 50px;
+        .title{
+            color: #059819;
+            font-size: 42px;
+            line-height: 1.1em;
+            font-weight: 700;
+            margin-top: 15px;
+            @include media-sm{
+                margin-top: 25px;
+            }
+        }
+        .description-text{
+            margin-bottom: 1.6em;
+            color: $gray-text;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.8em;
+            font-weight: 500;
+        }
+    }
+    .habilitaciones{
+        padding: 80px;
+        background: url(../../img/habilitaciones.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 50px;
+        .title{
+            color: $white;
+            font-size: 42px;
+            line-height: 1.1em;
+            font-weight: 700;
+        }
+        .description-text{
+            margin-bottom: 1.6em;
+            color: $white;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.8em;
+            font-weight: 500;
+            padding: 0 100px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include media-sm{
+                padding: 0;
+            }
+        }
+    }
+}

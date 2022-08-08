@@ -1,0 +1,115 @@
+#contacto{
+    margin-top: 95px;
+    .banner{
+        background: url(../../img/contacto.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+        p{
+            color: $white;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 100px;
+        }
+    }
+    .information{
+        padding: 50px 0;
+        .title{
+            color: $gray-text;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                color: $black;
+                font-size: 17px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            @include media-sm{
+                margin-bottom: 35px;
+            }
+        }
+        .btn-submit{
+            background: $red;
+            color: $white;
+            float: right;
+            border: 1px solid $red;
+            transition: 0.3s;
+            padding: 7px 25px;
+            &:hover{
+                background: $white;
+                color: $red;
+            }
+        }
+    }
+    .cv{
+        background: $gray-light-v2;
+        padding: 50px 0;
+        .title{
+            color: $gray-dark;
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .description{
+            color: $gray-text;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        form{
+            .row{
+                margin-bottom: 15px;
+            }
+            label{
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $gray-text;
+            }
+            input[type="file"] {
+                border: 0;
+                background: transparent;
+            }
+            .col-12{
+                @include media-sm{
+                    margin-bottom: 15px;
+                }
+            }
+            .btn-submit{
+                background: $black;
+                color: $white;
+                border: 1px solid $black;
+                transition: 0.3s;
+                padding: 7px 25px;
+                margin-top: 25px;
+                &:hover{
+                    background: $white;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

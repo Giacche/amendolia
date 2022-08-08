@@ -1,0 +1,116 @@
+#flota{
+    margin-top: 95px;
+    .banner{
+        background: url(../../img/flota.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        p{
+            color: $white;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 100px;
+        }
+    }
+    .description{
+        padding: 50px 0;
+        p{
+            margin-bottom: 1.6em;
+            text-align: center;
+            color: $gray-text;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.8em;
+            margin: 0;
+        }
+    }
+    .flota{
+        padding: 0 0 50px 0;
+        .title{
+            color: $red;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .description{
+            font-size: 16px;
+            color: $gray-text;
+            line-height: 20px;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 50px;
+            span{
+                font-weight: 700;
+            }
+        }
+        .items{
+            .box{
+                transition: 0.3s;
+                &:hover{
+                    .overlay{
+                        display: block;
+                    }
+                }
+                @include media-sm{
+                    margin-bottom: 25px;
+                }
+                .overlay{
+                    padding: 10px;
+                    height: 280px;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.7);
+                    text-align: center;
+                    display: none;
+                    .title{
+                        font-size: 26px;
+                        color: $white;
+                        font-weight: 500;
+                        text-align: center;
+                        margin-top: 75px;
+                    }
+                    .see-more{
+                        font-size: 16px;
+                        color: $white;
+                        border: 1px solid $white;
+                        padding: 11px 25px;
+                        transition: 0.3s;
+                        font-weight: 500;
+                        display: inline-block;
+                        &:hover{
+                            color: $gray-dark;
+                            background: $white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &.compactador{
+                    background: url(../../img/flota-01.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 280px;
+                    @include media-sm{
+                        background-position: center;
+                    }
+                }
+                &.batea{
+                    background: url(../../img/flota-02.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 280px;
+                    @include media-sm{
+                        background-position: center;
+                    }
+                }
+                &.roll-off{
+                    background: url(../../img/flota-03.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 280px;
+                    @include media-sm{
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+}

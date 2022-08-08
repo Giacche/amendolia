@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* Developer: Juan Ignacio Cieri */
+/* Developer URI: http://juancieri.com */
+
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+@import 'https://unpkg.com/aos@2.3.1/dist/aos.css';
+@import 'animate.min.css';
+@import 'owl.carousel.min.css';
+
+@import 'helpers/_variables';
+@import 'helpers/_mixins';
+@import 'components/_fonts';
+@import 'layout/_grid';
+
+// COMMON
+body, html {
+    font-family: $primary-font;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+@import 'layout/_header';
+@import 'layout/_footer';
+//@import 'components/_carousel';
+@import 'components/_buttons';
+@import 'components/_forms';
+@import 'components/_modals';
+@import 'components/_titles';
+
+// PAGES
+@import 'pages/_home';
+@import 'pages/_empresa';
+@import 'pages/_servicios';
+@import 'pages/_flota';
+@import 'pages/_compactador';
+@import 'pages/_batea';
+@import 'pages/_roll-off';
+@import 'pages/_contacto';
+
+// CUSTOM SCROLLBAR
+@include scrollbars(.5em, $primary-color);
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 999999999;
+}
+
+.fancybox-container{
+    z-index: 99999999999999;
+}

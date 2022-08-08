@@ -1,0 +1,18 @@
+.form {
+
+    .has-error {
+        .form-control {
+            background-color: rgba(red, .4);
+            border-color: red;
+            &::placeholder, &.placeholder {
+                color: $white;
+            }
+        }
+        .help-block {
+            color: red;
+            font-size: 12px;
+            @include font-size(12px);
+        }
+    }
+
+}

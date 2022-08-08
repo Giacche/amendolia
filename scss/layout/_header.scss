@@ -1,0 +1,126 @@
+// HEADER
+.navbar-toggler {
+    background-color: $white;
+    @include border-radius(0);
+    border: 1px solid $black;
+    outline: none !important;
+    width: 45px;
+    height: 40px;
+    margin: 0 !important;
+    transition: 0.3s;
+
+    .icon-bar {
+        width: 100%;
+        height: 2px !important;
+        background-color: $black;
+        display: block;
+        position: relative;
+        transition: 0.3s;
+        background-color: $black !important;
+        margin: 0 0 5px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:nth-child(1) {
+            transform: rotate(-45deg);
+            top: 7px;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(45deg);
+            top: 0px;
+        }
+
+        &:nth-child(3) {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+    }
+
+    &.collapsed {
+        .icon-bar {
+            transform: rotate(0deg);
+            top: 0;
+
+            &:nth-child(3) {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        }
+    }
+
+    &:hover, &:focus {
+        background-color: lighten($black, 10) !important;
+
+        .icon-bar {
+            background-color: $white !important;
+        }
+
+    }
+
+}
+
+.dropdown-menu {
+    background-color: $white;
+
+    @include media-xs {
+        background-color: darken($menu-bg, 2);
+        border: 0;
+    }
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999999;
+    .nav-link{
+        font-size: 16px;
+        font-weight: 600;
+        color: $gray-text;
+        transition: 0.3s;
+        border-bottom: 2px solid transparent;
+        margin-right: 20px;
+        &:hover{
+            color: $red-dark!important;
+            border-bottom: 2px solid $red-dark;
+        }
+    }
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    margin-top: 0;
+    padding: 0;
+    .dropdown-item{
+        padding: 0.7rem 1rem;
+        border-bottom: 1px dashed $gray;
+        &:hover{
+            background: $gray-dark;
+            color: $white;
+        }
+        &:last-child{
+            border-bottom: 0px;
+        }
+    }
+}
+
+.navbar {
+    background-color: $menu-bg;
+}
+
+.navbar-brand{
+    @include media-sm{
+        width: 80%;
+    }
+    img{
+        width: 48%;
+    }
+}

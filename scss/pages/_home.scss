@@ -1,0 +1,183 @@
+#home{
+    margin-top: 95px;
+    .slider{
+        .carousel-item{
+            .carousel-caption{
+                transform: translateY(-50%);
+                bottom: 0;
+                top: 58%;
+                @include media-sm{
+                    top: 50%;
+                }
+                h5{
+                    text-transform: uppercase;
+                    font-size: 44px;
+                    font-weight: 500;
+                    @include media-sm{
+                        font-size: 30px;
+                    }
+                }
+                p{
+                    font-size: 24px;
+                    font-weight: 400;
+                    @include media-sm{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .entry{
+        padding: 50px 0 0 0;
+        p{
+            font-size: 20px;
+            color: $gray-text;
+            line-height: 34px;
+            padding: 0;
+            margin: 0;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    .services{
+        padding: 50px 0;
+        .title{
+            color: $red;
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .description{
+            font-size: 18px;
+            color: $gray-text;
+            line-height: 32px;
+            padding: 0;
+            margin: 0;
+            span{
+                font-weight: 700;
+            }
+        }
+        .item{
+            margin: 50px 0 0 0;
+            svg{
+                width: 70px;
+            }
+            .description{
+                margin-top: 25px;
+                font-size: 25px;
+                color: $gray-dark;
+                font-weight: 700;
+            }
+        }
+    }
+    .flota{
+        padding: 50px 0;
+        .title{
+            color: $red;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .description{
+            font-size: 16px;
+            color: $gray-text;
+            line-height: 20px;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 50px;
+            span{
+                font-weight: 700;
+            }
+        }
+        .items{
+            .box{
+                transition: 0.3s;
+                &:hover{
+                    .overlay{
+                        display: block;
+                    }
+                }
+                @include media-sm{
+                    margin-bottom: 25px;
+                }
+                .overlay{
+                    padding: 10px;
+                    height: 280px;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.7);
+                    text-align: center;
+                    display: none;
+                    .title{
+                        font-size: 26px;
+                        color: $white;
+                        font-weight: 500;
+                        text-align: center;
+                        margin-top: 75px;
+                    }
+                    .see-more{
+                        font-size: 16px;
+                        color: $white;
+                        border: 1px solid $white;
+                        padding: 11px 25px;
+                        transition: 0.3s;
+                        font-weight: 500;
+                        display: inline-block;
+                        &:hover{
+                            color: $gray-dark;
+                            background: $white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &.compactador{
+                    background: url(../../img/flota-01.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 280px;
+                    @include media-sm{
+                        background-position: center;
+                    }
+                }
+                &.batea{
+                    background: url(../../img/flota-02.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 280px;
+                    @include media-sm{
+                        background-position: center;
+                    }
+                }
+                &.roll-off{
+                    background: url(../../img/flota-03.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 280px;
+                    @include media-sm{
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+    .clients{
+        padding: 0 0 50px 0;
+        .title{
+            color: $red;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .description{
+            font-size: 16px;
+            color: $gray-text;
+            line-height: 20px;
+            padding: 0;
+            margin: 0;
+            span{
+                font-weight: 700;
+            }
+        }
+        .owl-item{
+            padding: 40px 40px 40px 40px;
+        }
+    }
+}
